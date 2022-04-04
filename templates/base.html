@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %} {% endblock%}</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+  <meta charset="utf-8">
+  <title>{{ pageTitle }}</title>
 </head>
 <body>
-    <div>
-        <h1>Welcome to Software Design</h1>
-        <hr>
-        <br>
-        
-        {% block body %}
-
-        {% endblock %}
-
-    </div>
+<h1>Vertical Tank Maintenance</h1>
+  {% block body %}
+  {% endblock %}
 </body>
+<br>
+<footer> &copy;VTM 2022</footer>
 </html>

@@ -1,6 +1,30 @@
-{% extends 'base.html' %}
-
-{% block title %} Welcome to the home page {% endblock %}
-
-
-{% block body %} Hello world! {% endblock %}
+{% extends 'base.html' %} {% block body %}
+<nav>
+    <a class="active" href="./">Home</a>
+    <a href="./about">About</a>
+    <a href="./estimate">Estimate</a>
+</nav>
+<h2>
+    Welcome to VTM!
+</h2>
+<hr>
+<figure>
+        <img src="static/images/above_ground_vertical_tanks.jpg" height="300px" width="400px">
+    <figcaption class="caption">Image Source</figcaption>
+</figure>
+<br/>
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet ipsum non est convallis blandit in quis tortor.
+    Cras placerat, felis ac fermentum pretium, turpis purus consectetur nulla, eget rhoncus purus urna vel ligula. Aliquam et 
+    ligula tortor. Vivamus lobortis risus ac erat dictum, nec venenatis lectus semper. Duis quis ante eu justo pharetra pretium. 
+    Praesent sed feugiat arcu. Sed ullamcorper lacus sit amet varius faucibus. Quisque vulputate ante eu ornare convallis. Fusce
+    sit amet feugiat elit. Phasellus porta rhoncus enim in consequat. Vivamus dictum blandit ipsum, id ullamcorper libero pharetra
+    eu.
+    <br/>
+    <br/>
+    Morbi a urna nec libero imperdiet sagittis. Morbi pulvinar bibendum ipsum, sit amet semper magna pretium sit amet. Aliquam 
+    luctus pretium semper. Mauris faucibus varius eros, ac blandit massa euismod vel. Vestibulum finibus semper diam, ac efficitur 
+    elit placerat quis. Maecenas sit amet ante feugiat, viverra nunc ac, euismod arcu. Proin egestas placerat libero. Phasellus 
+    quam turpis, tempus id tincidunt et, semper eu arcu.
+</p>
+<hr/>
+{% endblock %}

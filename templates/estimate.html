@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block body %}
+<nav>
+    <a href="./">Home</a>
+    <a href="./about">About</a>
+    <a class="active" href="./estimate">Estimate</a>
+</nav>
+<h2> VTM Estimator </h2>
+<hr>
+<br>
+<form action="/estimate" method="POST">
+	<label for="radius">Radius (in inches):</label>
+	<input type="number" id="radius" name="radius" autofocus required />
+	<br>
+	<label for="height">Height (in inches):</label>
+	<input type="number" id="height" name="height" />
+	<br>
+    <br>
+	<input type="submit" id="submit" value="Calculate Estimate">
+	<input type="reset" value="Clear">
+</form>
+<br>	
+{% if quote %}
+Your Painting Estimate is {{quote}}.
+{% endif %}
+<br>
+{% endblock %}
