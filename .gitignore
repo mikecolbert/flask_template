@@ -1,14 +1,22 @@
+# hidden Mac file of cached metadata when Finder is used to browse folders
+.DS_Store
+
+#VS Code workspace file
+.VSCode
+
+#Python dotenv file
+.env
+
 #Virtual Environment
 venv/
 
-#Flask
+# Flask
 instance/*
 !instance/.gitignore
 .webassets-cache
 
-#Flask.Python Stack
-#Byte-compiled / optimized / DLL files
+# Flask.Python Stack
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
- 
