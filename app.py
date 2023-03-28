@@ -13,3 +13,16 @@ def mike():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+@app.route('/add', method=['POST'])
+def submit_form():
+
+    data = {
+        'name': request.form['name'],
+        'email': request.form['email'],
+        'additional comments': request.form['additional comments']
+    }
+
+    data_list.append(data)
+
+    return redirect('/')
